@@ -1,0 +1,60 @@
+print(f'Multiplication Test')
+print(f'===================')
+print(f'Everytime you get a question wrong\nyou loss 10% of your grade.')
+count=0
+test1=int(input('Q1: 12 x 12= '))
+while test1!=144:
+    count+=1
+    if test1>144:
+        print(f'Wrong answer Hint! Your answer is to high!\n Try Again!')
+        test1=int(input('12 x 12= '))
+    else:
+        print(f'Wrong answer Hint! Your answer is to low!\n Try Again!')
+        test1=int(input('12 x 12= '))
+print(f'Correct! 12x12= 144')
+print()
+
+test2=int(input('Q2: 12 x 11= '))
+while test2!=132:
+    count+=1
+    if test2>132:
+        print(f'Wrong answer Hint! Your answer is to high!\n Try Again!')
+        test2=int(input('12 x 11= '))
+    else:
+        print(f'Wrong answer Hint! Your answer is to low!\n Try Again!')
+        test2=int(input('12 x 11= '))
+print(f'Correct! 12x11: 132')
+print()
+
+test3=int(input('Q3: 7 x 7= '))
+while test3!=49:
+      count+=1
+      if test3>49:
+         print(f'Wrong answer Hint! Your answer is to high!\n Try Again!')
+         test3=int(input('7 x 7= '))
+      else:
+         print(f'Wrong answer Hint! Your answer is to low!\n Try Again!')
+         test3=int(input('7 x 7= '))
+        
+print(f'Correct! 12x11: 49')
+print()
+
+test4=int(input('Q4: 8 x 7= '))
+while test4!=56:
+    count+=1
+    if test4>56:
+        print(f'Wrong answer Hint! Your answer is to high!\n Try Again!')
+        test4=int(input('8 x 7= '))
+    else:
+        print(f'Wrong answer Hint! Your answer is to low!\n Try Again!')
+        test4=int(input('8 x 7= '))
+print(f'Correct! 8x7: 56')
+print()
+
+
+percent=100-(count*10)
+
+if percent>=70:
+    print(f'Congratulations you passed with a {percent}%!')
+else:
+    print(f'You Failed with a {percent}%!! feel free to Try again!')
